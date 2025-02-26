@@ -16,13 +16,40 @@ This project demonstrates a simple linear regression model using TensorFlow. It 
 
 ## Description
 
-This project implements a linear regression model using TensorFlow to predict values based on a given dataset. The dataset consists of two arrays, `x` and `y`, which represent the input and output values, respectively. The model is trained to learn the relationship between `x` and `y` and make predictions.
+Here’s the edited and formatted version of your text for inclusion in the `README.md` file:
 
-Key steps include:
-- Data preparation and splitting into training and testing sets.
-- Building and compiling a TensorFlow model.
-- Training the model and evaluating its performance.
-- Visualizing the results using Matplotlib.
+---
+
+## Description
+
+This project implements a **linear regression model** using TensorFlow to predict values based on a given dataset. The dataset consists of two arrays, `x` and `y`, which represent the input and output values, respectively. The model is trained to learn the relationship between `x` and `y` and make predictions.
+
+### Key Steps:
+
+1. **Data Preparation**:
+   - The dataset is split into training and testing sets to evaluate the model's performance.
+   - The input data (`x`) and output data (`y`) are prepared as TensorFlow tensors.
+
+2. **Model Building**:
+   - A simple neural network is created using TensorFlow's `Sequential` API.
+   - The model consists of a single dense layer with one neuron, which is typical for linear regression.
+
+3. **Model Compilation**:
+   - The model is compiled with:
+     - **Loss Function**: Mean Absolute Error (MAE) to measure the difference between predicted and actual values.
+     - **Optimizer**: Stochastic Gradient Descent (SGD) to update the model's weights.
+     - **Metrics**: MAE is used to evaluate the model during training.
+
+4. **Model Training**:
+   - The model is trained on the training data for a specified number of epochs.
+   - The training process minimizes the loss function to improve the model's accuracy.
+
+5. **Model Evaluation**:
+   - The model's performance is evaluated on the test data using MAE and Mean Squared Error (MSE).
+   - Predictions are visualized using Matplotlib to compare the actual and predicted values.
+
+6. **Visualization**:
+   - Plots are generated to visualize the training data, test data, and model predictions.
 
 ---
 
